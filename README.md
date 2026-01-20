@@ -1,13 +1,22 @@
-# FluxPilot: GitOps-Driven Deployment Controller
+# FluxPilot: GitOps-Driven Multi-Cloud Deployment Controller
 
-FluxPilot is a GitOps-based project that demonstrates how Kubernetes
-deployments can be managed using Git as the single source of truth.
+## Overview
+FluxPilot is a GitOps-based DevOps project that demonstrates how Kubernetes
+clusters and applications can be continuously managed using Git as the
+single source of truth.
+
+The project showcases modern DevOps practices such as declarative
+infrastructure, automated synchronization, and environment-based
+configuration management.
+
+---
+
+## Architecture (High Level)
+- GitHub repository acts as the source of truth
+- FluxCD continuously monitors repository changes
+- Cluster configuration is applied from `clusters/dev`
+- Application manifests are managed under `apps/sample-app`
+
+---
 
 ## Project Structure
-- clusters/ : Cluster configuration
-- apps/     : Application manifests
-- scripts/  : Helper scripts
-- docs/     : Documentation
-
-## Technologies
-Kubernetes, GitOps, YAML, Shell scripting
