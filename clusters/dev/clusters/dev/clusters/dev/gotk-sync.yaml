@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: fluxpilot-sync
-  namespace: flux-system
-data:
-  note: "Placeholder sync configuration. Replace with FluxCD GitRepository + Kustomization resources."
